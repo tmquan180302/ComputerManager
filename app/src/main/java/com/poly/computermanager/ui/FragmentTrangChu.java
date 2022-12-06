@@ -54,11 +54,11 @@ public class FragmentTrangChu extends Fragment {
             R.drawable.aser};
 
     int[] image = {
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-            R.drawable.image4,
-            R.drawable.image5,
+            R.drawable.image11,
+            R.drawable.image22,
+            R.drawable.image33,
+            R.drawable.image44,
+            R.drawable.image55,
             R.drawable.image6,
             R.drawable.image7,
     };

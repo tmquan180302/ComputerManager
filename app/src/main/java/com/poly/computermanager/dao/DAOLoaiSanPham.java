@@ -28,12 +28,12 @@ public class DAOLoaiSanPham {
         ContentValues values = new ContentValues();
         values.put(LoaiSanPham.COL_TENLSP,loaiSanPham.getTenlsp());
         values.put(LoaiSanPham.COL_HINHANH,loaiSanPham.getHinhanh());
-        int kq = database.update(LoaiSanPham.TABLE_LOAISANPHAM,values,"mslsp =? ",new String[]{String.valueOf(loaiSanPham.getMslsp())});
+        int kq = database.update(LoaiSanPham.TABLE_LOAISANPHAM,values,"mslsp = ? ",new String[]{String.valueOf(loaiSanPham.getMslsp())});
         return kq;
     }
     public int deleteLoaiSanPham(int id){
         SQLiteDatabase database = createSQL.getWritableDatabase();
-        int kq = database.delete(LoaiSanPham.TABLE_LOAISANPHAM,"mslsp =? ",new String[]{String.valueOf(id)});
+        int kq = database.delete(LoaiSanPham.TABLE_LOAISANPHAM,"mslsp = ? ",new String[]{String.valueOf(id)});
         return kq;
     }
     public ArrayList<LoaiSanPham> getAllDK(String sql , String... a){
@@ -74,7 +74,7 @@ public class DAOLoaiSanPham {
         return list.get(0);
     }
     public ArrayList<LoaiSanPham> checkGetIDLoai(int id){
-        String sql=" SELECT * FROM loaisanpham INNER JOIN sanpham on sanpham.mslsp =loaisanpham.mslsp WHERE loaisanpham.mslsp=? ";
+        String sql=" SELECT * FROM loaisanpham INNER JOIN hang on loaisanpham.mslsp = hang.mslsp WHERE loaisanpham.mslsp=? ";
         ArrayList<LoaiSanPham> list=getAllDK(sql, String.valueOf(id));
         return list;
 

@@ -80,7 +80,7 @@ public class DAOHang {
     }
 
     public ArrayList<Hang> checkGetIDHang(String id){
-        String sql=" SELECT * FROM hang INNER JOIN loaisanpham on loaisanpham.mshang =hang.mshang WHERE hang.mshang=? ";
+        String sql=" SELECT * FROM hang INNER JOIN loaisanpham on loaisanpham.mslsp =hang.mslsp WHERE hang.mshang=? ";
         ArrayList<Hang> list=getAllDK(sql, String.valueOf(id));
         return list;
 
