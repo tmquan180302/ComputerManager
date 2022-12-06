@@ -89,6 +89,7 @@ public class CreateSQL extends SQLiteOpenHelper {
 
     }
     //thaidoi
+    //siuuu
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
