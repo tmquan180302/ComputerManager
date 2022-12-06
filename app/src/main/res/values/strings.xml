@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ComputerManage</string>
+    <string name="trangchu">Trang chủ</string>
+    <string name="hoadon">Hóa đơn</string>
+    <string name="thongke">Thống kê</string>
+    <string name="them">Thêm</string>
+    <string-array name="khuyenmai">
+        <item>Không khuyến mãi</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+    </string-array>
+</resources>

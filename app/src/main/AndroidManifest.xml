@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.computermanage">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ComputerManage">
+        <activity android:name=".ui.sanpham.ActivityQuerySP"></activity>
+        <activity android:name=".ui.TonKho.ActivityTonKho" />
+        <activity android:name=".ui.hoadonnhap.ActivityChiTietHoaDonNhap" />
+        <activity android:name=".ui.hoadonnhap.ActivityHoadonNhap" />
+        <activity android:name=".ui.hoadonnhap.ActivityEditHoaDonNhap" />
+        <activity android:name=".ui.hoadonnhap.ActivityAddHoaDonNhap" />
+        <activity android:name=".ui.hoadonxuat.ActivityChiTietHoaDonXuat" />
+        <activity android:name=".ui.hoadonxuat.ActivityHoadonXuat" />
+        <activity android:name=".ui.hoadonxuat.ActivityEditHoaDonXuat" />
+        <activity android:name=".ui.hoadonxuat.ActivityAddHoaDonXuat" />
+        <activity android:name=".ui.sanpham.ActivityChiTietSanPham" />
+        <activity android:name=".ui.sanpham.ActivityEditSanPham" />
+        <activity android:name=".ui.sanpham.ActivityAddSanPham" />
+        <activity android:name=".ui.sanpham.ActivitySanPham" />
+        <activity android:name=".ui.khachhang.ActivityChiTietKhachHang" />
+        <activity android:name=".ui.khachhang.ActivityEditKhachHang" />
+        <activity android:name=".ui.khachhang.ActivityAddKhachHang" />
+        <activity android:name=".ui.khachhang.ActivityKhachHang" />
+        <activity android:name=".ui.loaisanpham.ActivityChiTietLoaiSP" />
+        <activity android:name=".ui.loaisanpham.ActivityEditLoaiSP" />
+        <activity android:name=".ui.loaisanpham.ActivityAddLoaiSP" />
+        <activity android:name=".ui.loaisanpham.ActivityLoaiSanPham" />
+        <activity android:name=".ui.nhanvien.ActivityChiTietNhanVien" />
+        <activity android:name=".ui.nhanvien.ActivityEditNhanVien" />
+        <activity android:name=".ui.nhanvien.ActivityAddNhanVien" />
+        <activity android:name=".ui.nhanvien.ActivityNhanVien" />
+        <activity android:name=".ui.hang.ActivityChiTietHang" />
+        <activity android:name=".ui.hang.ActivityEditHang" />
+        <activity android:name=".ui.hang.ActivityAddHang" />
+        <activity android:name=".ui.hang.ActivityHang" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

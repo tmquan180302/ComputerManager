@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_editSP"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_editAnhSanPham"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/image_defaut" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="16dp"
+
+                        app:boxStrokeColor="#03A9F4"
+                        app:boxStrokeWidth="1.5dp"
+                        app:hintTextColor="#03A9F4"
+                        app:startIconDrawable="@drawable/ic_source">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_editMaSanPham"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mã sản phẩm"
+                            android:inputType="text"
+                            android:textColor="#03A9F4" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="16dp"
+                        app:boxStrokeColor="#03A9F4"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconMode="clear_text"
+
+                        app:hintTextColor="#03A9F4"
+                        app:startIconDrawable="@drawable/ic_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_editTenSanPham"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tên sản phẩm"
+                            android:inputType="text"
+                            android:textColor="#03A9F4" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/spn_editHang"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="#EDEDED"
+                android:paddingEnd="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_money">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editGiaSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Giá tiền"
+                    android:inputType="number"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Tình trạng"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rdg_edittinhTrang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdo_editCu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Cũ"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_editLikeNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:text="Like New 99%"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_editMoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:text="Mới"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Trạng thái"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rdg_editTrangThai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdo_editconhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Còn hàng"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_edithethang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:text="Hết hàng"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_memory">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editCPUSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CPU"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_ram">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editRamSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ram"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_storage">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editOcungSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ổ cứng"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_hedieuhanh">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editHDHSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hệ điều hành"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_manhinh">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editManHinhSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Màn hình"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_cardmh">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editCardMHSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card màn hình"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_type">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editPinSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin"
+                    android:inputType="number"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_weight">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editTrongLuongSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Trọng lượng"
+                    android:inputType="number"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:boxStrokeWidth="1.5dp"
+                app:hintTextColor="#03A9F4"
+                app:startIconDrawable="@drawable/ic_mota">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_editMoTaSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mô tả"
+                    android:inputType="text"
+                    android:textColor="#03A9F4" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
