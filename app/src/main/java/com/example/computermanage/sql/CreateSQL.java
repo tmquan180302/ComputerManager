@@ -88,6 +88,7 @@ public class CreateSQL extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_HDCHITIET);
 
     }
+    //thaidoi
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
