@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.computermanage">
+    package="com.poly.computermanager">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -14,43 +14,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ComputerManage">
-        <activity android:name=".ui.sanpham.ActivityQuerySP"></activity>
-        <activity android:name=".ui.TonKho.ActivityTonKho" />
-        <activity android:name=".ui.hoadonnhap.ActivityChiTietHoaDonNhap" />
-        <activity android:name=".ui.hoadonnhap.ActivityHoadonNhap" />
-        <activity android:name=".ui.hoadonnhap.ActivityEditHoaDonNhap" />
-        <activity android:name=".ui.hoadonnhap.ActivityAddHoaDonNhap" />
-        <activity android:name=".ui.hoadonxuat.ActivityChiTietHoaDonXuat" />
-        <activity android:name=".ui.hoadonxuat.ActivityHoadonXuat" />
-        <activity android:name=".ui.hoadonxuat.ActivityEditHoaDonXuat" />
-        <activity android:name=".ui.hoadonxuat.ActivityAddHoaDonXuat" />
-        <activity android:name=".ui.sanpham.ActivityChiTietSanPham" />
-        <activity android:name=".ui.sanpham.ActivityEditSanPham" />
-        <activity android:name=".ui.sanpham.ActivityAddSanPham" />
-        <activity android:name=".ui.sanpham.ActivitySanPham" />
-        <activity android:name=".ui.khachhang.ActivityChiTietKhachHang" />
-        <activity android:name=".ui.khachhang.ActivityEditKhachHang" />
-        <activity android:name=".ui.khachhang.ActivityAddKhachHang" />
-        <activity android:name=".ui.khachhang.ActivityKhachHang" />
-        <activity android:name=".ui.loaisanpham.ActivityChiTietLoaiSP" />
-        <activity android:name=".ui.loaisanpham.ActivityEditLoaiSP" />
-        <activity android:name=".ui.loaisanpham.ActivityAddLoaiSP" />
-        <activity android:name=".ui.loaisanpham.ActivityLoaiSanPham" />
-        <activity android:name=".ui.nhanvien.ActivityChiTietNhanVien" />
-        <activity android:name=".ui.nhanvien.ActivityEditNhanVien" />
-        <activity android:name=".ui.nhanvien.ActivityAddNhanVien" />
-        <activity android:name=".ui.nhanvien.ActivityNhanVien" />
-        <activity android:name=".ui.hang.ActivityChiTietHang" />
-        <activity android:name=".ui.hang.ActivityEditHang" />
-        <activity android:name=".ui.hang.ActivityAddHang" />
-        <activity android:name=".ui.hang.ActivityHang" />
+        <activity android:name="com.poly.computermanager.ui.sanpham.ActivityQuerySP"></activity>
+        <activity android:name="com.poly.computermanager.ui.TonKho.ActivityTonKho" />
+        <activity android:name="com.poly.computermanager.ui.hoadonnhap.ActivityChiTietHoaDonNhap" />
+        <activity android:name="com.poly.computermanager.ui.hoadonnhap.ActivityHoadonNhap" />
+        <activity android:name="com.poly.computermanager.ui.hoadonnhap.ActivityEditHoaDonNhap" />
+        <activity android:name="com.poly.computermanager.ui.hoadonnhap.ActivityAddHoaDonNhap" />
+        <activity android:name="com.poly.computermanager.ui.hoadonxuat.ActivityChiTietHoaDonXuat" />
+        <activity android:name="com.poly.computermanager.ui.hoadonxuat.ActivityHoadonXuat" />
+        <activity android:name="com.poly.computermanager.ui.hoadonxuat.ActivityEditHoaDonXuat" />
+        <activity android:name="com.poly.computermanager.ui.hoadonxuat.ActivityAddHoaDonXuat" />
+        <activity android:name="com.poly.computermanager.ui.sanpham.ActivityChiTietSanPham" />
+        <activity android:name="com.poly.computermanager.ui.sanpham.ActivityEditSanPham" />
+        <activity android:name="com.poly.computermanager.ui.sanpham.ActivityAddSanPham" />
+        <activity android:name="com.poly.computermanager.ui.sanpham.ActivitySanPham" />
+        <activity android:name="com.poly.computermanager.ui.khachhang.ActivityChiTietKhachHang" />
+        <activity android:name="com.poly.computermanager.ui.khachhang.ActivityEditKhachHang" />
+        <activity android:name="com.poly.computermanager.ui.khachhang.ActivityAddKhachHang" />
+        <activity android:name="com.poly.computermanager.ui.khachhang.ActivityKhachHang" />
+        <activity android:name="com.poly.computermanager.ui.loaisanpham.ActivityChiTietLoaiSP" />
+        <activity android:name="com.poly.computermanager.ui.loaisanpham.ActivityEditLoaiSP" />
+        <activity android:name="com.poly.computermanager.ui.loaisanpham.ActivityAddLoaiSP" />
+        <activity android:name="com.poly.computermanager.ui.loaisanpham.ActivityLoaiSanPham" />
+        <activity android:name="com.poly.computermanager.ui.nhanvien.ActivityChiTietNhanVien" />
+        <activity android:name="com.poly.computermanager.ui.nhanvien.ActivityEditNhanVien" />
+        <activity android:name="com.poly.computermanager.ui.nhanvien.ActivityAddNhanVien" />
+        <activity android:name="com.poly.computermanager.ui.nhanvien.ActivityNhanVien" />
+        <activity android:name="com.poly.computermanager.ui.hang.ActivityChiTietHang" />
+        <activity android:name="com.poly.computermanager.ui.hang.ActivityEditHang" />
+        <activity android:name="com.poly.computermanager.ui.hang.ActivityAddHang" />
+        <activity android:name="com.poly.computermanager.ui.hang.ActivityHang" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.poly.computermanager.LoginActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.poly.computermanager.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,7 +59,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.poly.computermanager.MainActivity"
             android:exported="true" />
     </application>
 

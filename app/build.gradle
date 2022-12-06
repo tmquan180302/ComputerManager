@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "vn.poly.computermanage"
+        applicationId "com.poly.computermanager"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
