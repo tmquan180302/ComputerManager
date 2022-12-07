@@ -60,7 +60,7 @@ public class FragmentTrangChu extends Fragment {
             R.drawable.image44,
             R.drawable.image55,
             R.drawable.image6,
-            R.drawable.image7,
+            R.drawable.image77,
     };
 
     @Override
